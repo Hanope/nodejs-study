@@ -141,7 +141,7 @@ describe('POST /users', () => {
     });
 });
 
-describe.only('PUT /users/:id', () => {
+describe('PUT /users/:id', () => {
     const users = [{name: 'alice'}, {name: 'bek'}, {name: 'chris'}];
     before(() => models.sequelize.sync({force: true}));
     before(()=> models.User.bulkCreate(users));
